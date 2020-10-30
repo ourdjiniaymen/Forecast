@@ -29,5 +29,5 @@ data class CurrentWeatherEntry(
         val windSpeed: Int
 ){
     @PrimaryKey(autoGenerate = false)
-    val id : Int = CURRENT_WEATHER_ID
+    var id: Int = CURRENT_WEATHER_ID
 }
