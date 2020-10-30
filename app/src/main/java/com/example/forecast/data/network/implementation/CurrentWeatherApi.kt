@@ -3,7 +3,7 @@ package com.example.forecast.data.network.implementation
 import com.example.forecast.data.network.abstraction.Api
 import com.example.forecast.data.network.abstraction.SERVER_URL
 import kotlinx.coroutines.Deferred
-import com.example.forecast.data.response.CurrentWeatherResponse
+import com.example.forecast.data.network.response.CurrentWeatherResponse
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import retrofit2.http.GET
 import retrofit2.http.Query
