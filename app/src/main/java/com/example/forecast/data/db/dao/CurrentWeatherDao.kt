@@ -11,7 +11,7 @@ import com.example.forecast.data.db.entity.CurrentWeatherEntry
 @Dao
 interface CurrentWeatherDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun upsert(currentWeatherEntry: CurrentWeatherEntry)//Insert Or Update
+    fun upsert(currentWeatherEntry: CurrentWeatherEntry)//Update or Insert
 
     @Query("select * from current_weather where id = $CURRENT_WEATHER_ID")
     fun getCurrentWeather(): LiveData<CurrentWeatherEntry>
